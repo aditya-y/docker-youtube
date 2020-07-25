@@ -8,7 +8,7 @@ script:
   - docker run -e CI=true dockeryoutube npm run test 
 
 deploy:
-  #provider: elasticbeanstalk
+  provider: elasticbeanstalk
   access_key_id: $ACCESS_KEY_ID
   secret_access_key: 
     secure: "$SECRET_ACCESS_KEY"
